@@ -1,3 +1,7 @@
+/* Menores a 576px 
+aplica a todo aquello que no sea 
+reescrito en MediaQueries */
+
 /*GENERALES*/
 
 * {
@@ -31,8 +35,7 @@ h1 {
   width: 400%;
   display: flex;
   margin-left: -45%;
-  
-}
+  }
 
 .main .contenedor-slider .slider .slide {
   width: 15%;
@@ -74,17 +77,29 @@ h1 {
 }
 
 
-/* ----- MEDIA QUERIES ----- */
-
-@media screen and (max-width:1040px) {
-  /*Nuestro equipo*/
-
+/* Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {
 }
 
-@media screen and (max-width: 900px) {
-  /*Encabezado*/
-
-
+/* Entre 768px y 991px */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
 }
 
-@media screen and (max-width:550px) {}
+/* Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+}
+
+/* Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+      /* Tus estilos para dispositivos extra large y superiores van aquí */
+            
+      .main .contenedor-slider .slider .slide {
+      max-width: 1500px;
+      
+      }
+}
