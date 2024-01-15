@@ -1,4 +1,3 @@
-// Seleccionar elementos del DOM
 const slide = document.getElementsByClassName('slide');
 const slider = document.getElementById('slider');
 const btnAnterior = document.getElementById('btnAnterior');
@@ -17,7 +16,7 @@ function moverDerecha() {
     setTimeout(() => {
         slider.lastElementChild.insertAdjacentElement("afterend", slider.firstElementChild);
         slider.style.transition = 'none';
-        slider.style.marginLeft = '-45%';
+        slider.style.marginLeft = '-43%';
         resetInterval();
     }, 700);
 }
@@ -29,7 +28,7 @@ btnSiguiente.addEventListener('click', moverDerecha);
 function moverIzquierda() {
     // Animar el margen izquierdo del slider
     slider.style.transition = 'margin-left 0.8s';
-    slider.style.marginLeft = '-45%';
+    slider.style.marginLeft = '-43%';
 
     // Esperar a que termine la animación antes de cambiar el orden de los elementos
     setTimeout(() => {
@@ -58,3 +57,4 @@ function resetInterval() {
 // - Se ha corregido el error tipográfico en 'slider.style.marginLeft'.
 // - Se han añadido verificaciones para garantizar que existan suficientes elementos en 'slide'.
 // - Se ha deshabilitado temporalmente la transición después de la animación para evitar problemas. 
+
